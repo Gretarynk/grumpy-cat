@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="add.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../catlogo4.svg" alt="grumpy cat logo" class="logoImg" />
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="../index.html">Main</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./add.html">Add Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="box" class="box">
+      <div class="photoBox">
+        <img id="formPhoto" src="../hipster7.png" alt="" class="formPhoto" />
+      </div>
+      <div id="formBox" class="formBox">
+          <div id="formTable" class="formTable">
+            <h2>Add service for grumpy cats.</h2>
+          <input
+            id="inputTitle"
+            class="inputTitle"
+            type="text"
+            placeholder="Title..."
+          />
+          <textarea id="textDescription" class="textDescription" name="Description" id="" cols="30" rows="5" placeholder="Service Description, min 25 character..."></textarea>
+          <!-- <input id="inputDescription" class="inputDescription" type="text" placeholder="Service Description, min 25 character..." > -->
+          <input
+            id="inputPrice"
+            type="text"
+            placeholder="Price in Eur per person..."
+          />
+          <input id="inputLocation" type="text" placeholder="Location..." />
+          <input id="imgUrl" placeholder="link with photo..." type="text">
+
+        </div>
+        <button id="addButton" class="addButton">Add</button>
+      </div>
+    </div>
+    <div id="messageAdd"></div>
+
+    <script src="add.js"></script>
+  </body>
+</html>
