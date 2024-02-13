@@ -90,11 +90,32 @@ header {
   background-color: #797b48;
   
 }
-footer{
-    background-color: #797A5B;
-    height: 150px;
+footer {
+  background-color: #797a5b;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  color: #f3deaa;
+  h2 {
+    font-family: 'inter';
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .footerText{
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
     align-items: center;
-    
+    position: relative;
+  }
+  .love{
+    position: absolute;
+    top:60px;
+  }
+  .logoFooter{
+    padding-right: 25px;
+  }
+ 
 }
