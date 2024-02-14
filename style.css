@@ -42,12 +42,11 @@ header {
 }
 .photoBox {
   max-width: 1440px;
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   margin: auto;
-  
 }
 
 .photoBox img {
@@ -55,15 +54,14 @@ header {
   object-fit: cover;
 }
 .textBox {
-    h1{
-  font-family: 'inter';
-  color: #757855;
-  text-align: center;
-  font-weight: normal;
-  padding-top: 30px;
-  padding-bottom: 30px;
-    
-}
+  h1 {
+    font-family: "inter";
+    color: #757855;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .cardBox {
   background-color: #e7f0ea;
@@ -106,11 +104,11 @@ footer {
   align-items: center;
   color: #f3deaa;
   h2 {
-    font-family: 'inter';
+    font-family: "inter";
     font-size: 30px;
     font-weight: normal;
   }
-  .footerText{
+  .footerText {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,16 +117,15 @@ footer {
     align-items: center;
     position: relative;
   }
-  .love{
+  .love {
     position: absolute;
-    top:60px;
+    top: 60px;
   }
-  .logoFooter{
+  .logoFooter {
     padding-right: 25px;
   }
- 
 }
-.mobileMenu{
+.mobileMenu {
   display: none;
   position: fixed;
   width: 100%;
@@ -139,60 +136,60 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
-    
-    a{
+
+    a {
       text-decoration: none;
-      color: #f3deaa;}
+      color: #f3deaa;
+    }
   }
 }
-.burgerMenu{
- all: unset;
- display: none;
- cursor:pointer;
+.burgerMenu {
+  all: unset;
+  display: none;
+  cursor: pointer;
 }
-.burgerMenu:hover svg path,.burgerMenu:hover svg ellipse{
+.burgerMenu:hover svg path,
+.burgerMenu:hover svg ellipse {
   fill: #f3deaa;
   opacity: 70%;
   stroke: none;
-  transition:ease-in-out 1s;
- }
-.active{
+  transition: ease-in-out 1s;
+}
+.active {
   left: 0;
 }
 
-@media  screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .navigation {
     display: none;
   }
-  .burgerMenu{
-   display: inline-block;
-   
-   }
-   
-   .logo{
+  .burgerMenu {
+    display: inline-block;
+  }
+
+  .logo {
     width: 50%;
-   }
-   .mobileMenu{
+  }
+  .mobileMenu {
     display: inline-block;
     background-color: #797a5b;
-   }
-   .photoBox{
+  }
+  .photoBox {
     display: grid;
-  grid-template-columns: 1fr ;
-  .hipster1{
-    display: none;
+    grid-template-columns: 1fr;
+    .hipster1 {
+      display: none;
+    }
+    .hipster3 {
+      display: none;
+    }
   }
-  .hipster3{
-    display: none;
-  }
-   }
-   .cardBox{
+  .cardBox {
     flex-wrap: wrap;
-   }
-   .card {
+  }
+  .card {
     width: 450px;
     height: 570px;
     cursor: pointer;
-   }
+  }
 }
