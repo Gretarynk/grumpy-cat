@@ -6,6 +6,8 @@ const locationElement=document.getElementById('location');
 const btnDelete=document.getElementById('btnDelete');
 const backButton=document.getElementById('back');
 const message=document.getElementById('message');
+const mobileMenu=document.getElementById('mobileMenu');
+const burgerMenu=document.getElementById('burgerMenu');
 
 const servicesId=localStorage.getItem('serviceId');
 console.log(servicesId);
@@ -40,6 +42,8 @@ btnDelete.addEventListener('click', async()=>{
     }
 
 })
-
+burgerMenu.addEventListener('click',()=>{
+    mobileMenu.classList.toggle('active');
+})
 
 

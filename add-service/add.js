@@ -5,6 +5,8 @@ const description=document.getElementById('textDescription');
 const price=document.getElementById('inputPrice');
 const serviceLocation=document.getElementById('inputLocation');
 const messageAdd=document.getElementById('messageAdd');
+const mobileMenu=document.getElementById('mobileMenu');
+const burgerMenu=document.getElementById('burgerMenu');
 
 buttonAdd.addEventListener('click', async()=>{
     if(!title.value || !description.value || !price.value || !imgUrl.value || !serviceLocation.value ){
@@ -32,3 +34,7 @@ buttonAdd.addEventListener('click', async()=>{
 
 
 });
+
+burgerMenu.addEventListener('click',()=>{
+    mobileMenu.classList.toggle('active');
+})
