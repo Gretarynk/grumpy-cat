@@ -126,10 +126,35 @@ footer {
 }
 .mobileMenu{
   display: none;
+  position: fixed;
+  width: 100%;
+  left: -100%;
+  transition: 0.4s;
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+    a{
+      text-decoration: none;
+      color: #f3deaa;}
+  }
 }
 .burgerMenu{
  all: unset;
  display: none;
+ cursor:pointer;
+}
+.burgerMenu:hover svg path,.burgerMenu:hover svg ellipse{
+  fill: #f3deaa;
+  opacity: 70%;
+  stroke: none;
+  transition:ease-in-out 1s;
+ }
+.active{
+  left: 0;
 }
 
 @media  screen and (max-width: 768px){
@@ -137,11 +162,19 @@ footer {
     display: none;
   }
   .burgerMenu{
-    all: unset;
+   display: inline-block;
    
    }
+   
    .logo{
     width: 50%;
+   }
+   .mobileMenu{
+    display: inline-block;
+    background-color: #797a5b;
+    
+    
+
    }
    .cardBox{
     flex-wrap: wrap;

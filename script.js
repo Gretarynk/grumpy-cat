@@ -1,5 +1,6 @@
 const cardBox=document.getElementById('cardBox');
-
+const mobileMenu=document.getElementById('mobileMenu');
+const burgerMenu=document.getElementById('burgerMenu');
 
 const fetchServices= async()=>{
     const response= await fetch('https://65bb5c4e52189914b5bbd8dd.mockapi.io/grumpycat_services');
@@ -38,3 +39,7 @@ const fetchServices= async()=>{
 
 }
 fetchServices();
+
+burgerMenu.addEventListener('click',()=>{
+    mobileMenu.classList.toggle('active');
+})
