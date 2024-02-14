@@ -1,0 +1,124 @@
+body {
+    margin: auto;
+    max-width: 1440px;
+    font-family: "Inter", sans-serif;
+  }
+  header {
+    background-color: #797a5b;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px #28291e;
+  }
+  .logo {
+    width: 480px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoImg {
+    width: 100px;
+    height: 100px;
+  
+    background-color: #797a5b;
+  }
+  .navigation {
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  .navigation ul li a {
+    text-decoration: none;
+    color: #f3deaa;
+    font-size: 20px;
+  }
+
+  footer {
+    background-color: #797a5b;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    color: #f3deaa;
+    
+   
+    h2 {
+      font-family: "inter";
+      font-size: 30px;
+      font-weight: normal;
+    }
+    .footerText {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .love {
+      position: absolute;
+      top: 60px;
+    }
+    .logoFooter {
+      padding-right: 25px;
+    }
+  }
+  .mobileMenu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    transition: 0.4s;
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      
+      a{
+        text-decoration: none;
+        color: #f3deaa;}
+    }
+  }
+  .burgerMenu{
+   all: unset;
+   display: none;
+   cursor:pointer;
+  }
+  .burgerMenu:hover svg path,.burgerMenu:hover svg ellipse{
+    fill: #f3deaa;
+    opacity: 70%;
+    stroke: none;
+    transition:ease-in-out 1s;
+   }
+  .active{
+    left: 0;
+  }
+  @media  screen and (max-width: 768px){
+    .navigation {
+      display: none;
+    }
+    .burgerMenu{
+     display: inline-block;
+     
+     }
+     
+     .logo{
+      width: 50%;
+     }
+     .mobileMenu{
+      display: inline-block;
+      background-color: #797a5b;
+     }
+    
+    }
