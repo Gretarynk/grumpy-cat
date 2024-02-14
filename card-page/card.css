@@ -41,18 +41,19 @@ header {
   font-size: 20px;
 }
 .cardWrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 480px 2fr;
   gap: 50px;
   /* align-items: center; */
   box-shadow: 0 2px 10px #797a5b;
 }
-.image{
-    height: 700px;
+.imageCard{
+  
     background-color:#C2C3A6;
 }
 
-.image img {
-  width: 480px;
+.imageCard img {
+  width: 100%;
 }
 .textBox {
   padding-right: 70px;
@@ -89,6 +90,13 @@ header {
 #back {
   background-color: #797b48;
   
+}
+.message{
+  color: #797b48;
+  font-size: 20px;
+  padding-top: 10px;
+  transition: 0.5s;
+  padding-bottom: 20px;
 }
 footer {
   background-color: #797a5b;
@@ -166,6 +174,18 @@ footer {
    .mobileMenu{
     display: inline-block;
     background-color: #797a5b;
+   }
+   .cardWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    .textBox{
+      padding-top: 5px;
+      padding-left: 80px;
+    }
+    .imageCard{
+      max-width: 100%;
+    }
    }
   
 }
