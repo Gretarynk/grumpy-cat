@@ -1,6 +1,7 @@
 body {
     margin: auto;
     max-width: 1440px;
+    min-width: 300px;
     font-family: "Inter", sans-serif;
   }
   header {
@@ -40,7 +41,33 @@ body {
     color: #f3deaa;
     font-size: 20px;
   }
-
+  .boxWrapper{
+    position: relative;
+  }
+  .backgroundImage{
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img{
+      width: 100%;
+    }
+  }
+  .textBackground{
+    width: 50%;
+    /* max-height: 90%; */
+    background-color: rgba(242, 242, 233, 0.794);
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    padding: 10px;
+    text-align: center;
+    p{
+      font-size: 18px;
+    }
+    h1{
+      color: #797a5b;
+    }
+  }
   footer {
     background-color: #797a5b;
     width: 100%;
@@ -60,6 +87,7 @@ body {
       display: flex;
       flex-direction: column;
       padding: 0;
+      padding-left: 10px;
       justify-content: center;
       align-items: center;
       position: relative;
@@ -120,8 +148,31 @@ body {
       display: inline-block;
       background-color: #797a5b;
      }
-    
+     .boxWrapper{
+      position: relative;
+     }
+     .textBackground{
+      position: absolute;
+      top: 10%;
+      left: 25%;
+     }
+     .backgroundImage{
+      max-width: 1440px;
+      display: grid;
+      grid-template-columns: 1fr;
+     
     }
     
+    }
+    @media  screen and (max-width: 945px){
+      .boxWrapper{
+        position: relative;
+       }
+       .textBackground{
+        position: absolute;
+        top: 15%;
+        left: 25%;
+       }
+    }
      
   
