@@ -1,6 +1,7 @@
 body {
     margin: auto;
     max-width: 1440px;
+    min-width: 400px;
     font-family: "Inter", sans-serif;
   }
   header {
@@ -39,6 +40,15 @@ body {
     text-decoration: none;
     color: #f3deaa;
     font-size: 20px;
+  }
+  .mainText{
+    padding: 20rem;
+    text-align: center;
+    background-image: url(../hipsters\ 2.png);
+    
+    object-fit:contain;
+    color: #f3deaa;
+    
   }
 
   footer {
@@ -119,6 +129,11 @@ body {
      .mobileMenu{
       display: inline-block;
       background-color: #797a5b;
+     }
+     .mainText{
+      padding: 15rem;
+     
+      
      }
     
     }
