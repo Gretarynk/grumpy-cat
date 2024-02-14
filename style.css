@@ -11,7 +11,7 @@ header {
   box-shadow: 0px 10px 10px #28291e;
 }
 .logo {
-  width: 480px;
+  width: 400px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -42,13 +42,17 @@ header {
 }
 .photoBox {
   max-width: 1440px;
-  object-fit: cover;
-  display: flex;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+  margin: auto;
+  
 }
 
 .photoBox img {
-  width: 480px;
+  width: 100%;
+  object-fit: cover;
 }
 .textBox {
     h1{
@@ -172,9 +176,16 @@ footer {
    .mobileMenu{
     display: inline-block;
     background-color: #797a5b;
-    
-    
-
+   }
+   .photoBox{
+    display: grid;
+  grid-template-columns: 1fr ;
+  .hipster1{
+    display: none;
+  }
+  .hipster3{
+    display: none;
+  }
    }
    .cardBox{
     flex-wrap: wrap;

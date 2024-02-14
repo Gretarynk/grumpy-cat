@@ -45,15 +45,19 @@ header {
 }
 .box {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 20px;
+  padding-bottom: 40px;
 }
 .formBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding-right: 15%;
+  padding-left: 15%;
+ 
+
 
   .formTable {
     display: flex;
@@ -64,15 +68,16 @@ header {
   input {
     border: none;
     height: 40px;
-    width: 450px;
+    width: 100%;
     background-color: #f8f8f8;
     color: #6e6e54;
     border-bottom: 1px solid #bebebb;
     font-family: "Inter", sans-serif;
   }
-  input[type="text"]:focus {
-    border-color: #bb0593;
+  input[type=text]:focus{
+    outline: none;
   }
+ 
   .textDescription {
     background-color: #f8f8f8;
     border: none;
@@ -84,6 +89,10 @@ header {
     padding-bottom: 0;
     text-align: center;
     font-family: "Inter", sans-serif;
+    font-weight: normal;
+  }
+  .textDescription[type=text]:focus{
+    outline: #797a5b;
   }
 }
 .addButton {
@@ -96,8 +105,15 @@ header {
   align-self: flex-end;
   background-color: #797b48;
 }
+.messageAdd{
+  color: #797b48;
+  font-size: 20px;
+  padding-top: 10px;
+  transition: 0.5s;
+  padding-bottom: 20px;
+}
 .photoBox {
-  height: 550px;
+  height: 650px;
   background-color: #c2c3a6;
 }
 
@@ -181,5 +197,31 @@ footer {
     display: inline-block;
     background-color: #797a5b;
    }
+   .box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    
+    gap: 20px;
+  }
+  .formBox{
+    padding-left: 10%;
+    padding-right: 10%;
+    input{
+      width: 100%;
+    }
+    .addButton{
+      margin-top: 10px;
+    }
+  }
+  .photoBox{
+    align-self: center;
+    width: 100%;
+    .formPhoto{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
    
 }
