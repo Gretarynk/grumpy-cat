@@ -44,21 +44,19 @@ header {
   width: 480px;
 }
 .box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   /* justify-content: space-between; */
   gap: 20px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 .formBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
-  padding-right: 15%;
-  padding-left: 15%;
- 
-
-
+  padding-right: 10%;
+  padding-left: 10%;
   .formTable {
     display: flex;
     flex-direction: column;
@@ -104,6 +102,7 @@ header {
   cursor: pointer;
   align-self: flex-end;
   background-color: #797b48;
+  margin-top: 10px;
 }
 .messageAdd{
   color: #797b48;
@@ -113,7 +112,7 @@ header {
   padding-bottom: 20px;
 }
 .photoBox {
-  height: 650px;
+  
   background-color: #c2c3a6;
 }
 
