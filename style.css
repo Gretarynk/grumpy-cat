@@ -73,7 +73,7 @@ header {
   }
 }
 .cardBox {
-  background-image:linear-gradient(90deg, rgb(37, 20, 6) 20%, rgb(13, 32, 34) 38%, rgb(11, 8, 37) 93%);
+  background-image:linear-gradient(1deg, #797a5e 20%, rgb(63 81 76) 38%, rgb(23 30 33) 93%);
   display: flex;
   justify-content: center;
   align-items: center;
