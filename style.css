@@ -75,11 +75,15 @@ header {
   flex-wrap: wrap;
   row-gap: 0;
 }
-.card {
+a.card {
+  text-decoration: none;
+}
+div.card {
   width: 350px;
   height: 470px;
   border-radius: 5px;
   background-color: #c2c3a6;
+  
   /* box-shadow: -1px 6px 15px #bbbbbb; */
   .title {
     color: #797a5b;
@@ -91,6 +95,8 @@ header {
     padding: 10px;
     text-align: right;
   }
+
+
 }
 .photo {
   width: 100%;

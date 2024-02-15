@@ -22,21 +22,27 @@ const fetchServices = async () => {
     price.setAttribute("class", "price");
     price.innerText = `${service.price} Eur per person`;
 
+    link = document.createElement("a");
+    link.href = `./card-page/card.html?id=${service.id}`;
+    
     card.append(photo);
     card.append(title);
     card.append(price);
-    cardBox.append(card);
+    link.setAttribute("class", "card");
+    link.appendChild(card);
+    // card.append(link);
+    cardBox.append(link);
 
-    card.addEventListener("click", () => {
-      console.log(service.Title);
-      localStorage.setItem("serviceId", service.id);
-      navigateToCardPage(service.id);
-    });
+    // card.addEventListener("click", () => {
+    //   //   console.log(service.Title);
+    //   //   localStorage.setItem("serviceId", service.id);
+    //   navigateToCardPage(service.id);
+    // });
   });
-  const navigateToCardPage = (serviceId) => {
-    const servicePageUrl = `./card-page/card.html?id=${serviceId}`;
-    window.location.href = servicePageUrl;
-  };
+//   const navigateToCardPage = (serviceId) => {
+//     const servicePageUrl = `./card-page/card.html?id=${serviceId}`;
+//     window.location.href = servicePageUrl;
+//   };
 };
 fetchServices();
 
