@@ -139,9 +139,16 @@ body {
       background-color:var(--main-color);
      }
      .mainText{
-      padding: 15rem;
-     
-      
+      padding: 10rem;
      }
+     .footerText{
+      width: 50%;
+      h2{
+        font-size: 18px;
+      }
+      .love{
+        font-size: xx-small;
+      }
+    }
     
     }

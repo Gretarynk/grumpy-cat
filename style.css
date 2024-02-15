@@ -73,7 +73,7 @@ header {
   }
 }
 .cardBox {
-  background-color: #e7f0ea;
+  background-image:linear-gradient(90deg, rgb(37, 20, 6) 20%, rgb(13, 32, 34) 38%, rgb(11, 8, 37) 93%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +109,7 @@ div.card {
 }
 .photo {
   width: 100%;
-  max-height: 360px;
+  max-height: 350px;
   object-fit: cover;
   padding-bottom: 10px;
 }
@@ -201,11 +201,17 @@ footer {
     }
   }
   .cardBox {
-    flex-wrap: wrap;
+   
+    display: grid;
+    align-items: center;    
   }
-  .card {
-    width: 450px;
-    height: 570px;
-    cursor: pointer;
+  .footerText{
+    width: 50%;
+    h2{
+      font-size: 18px;
+    }
+    .love{
+      font-size: xx-small;
+    }
   }
 }
