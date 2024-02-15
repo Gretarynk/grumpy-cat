@@ -31,7 +31,9 @@ buttonAdd.addEventListener('click', async()=>{
     console.log(addedServices);
 
     messageAdd.innerText= 'Your service was added successfully.';
-
+    setTimeout(()=>{
+        messageAdd.innerText='';
+    },3000);
 
 });
 
