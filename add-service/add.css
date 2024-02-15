@@ -1,10 +1,17 @@
+:root{--main-color: #797a5b;
+  --main-light-textColor: #f3deaa;
+  --main-dark-textColor:#4b4e27;
+  --main-fontFamily:"Inter", sans-serif;
+  --main-redColor:#9e3535;
+  --buttonColor:#797b48;
+--imageCardColor:#C2C3A6;}
 body {
   margin: auto;
   max-width: 1440px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--main-fontFamily);
 }
 header {
-  background-color: #797a5b;
+  background-color: var(--main-color);
   height: 150px;
   display: flex;
   justify-content: space-between;
@@ -21,7 +28,7 @@ header {
   width: 100px;
   height: 100px;
 
-  background-color: #797a5b;
+  background-color: var(--main-color);
 }
 .navigation {
   width: 66%;
@@ -37,7 +44,7 @@ header {
 }
 .navigation ul li a {
   text-decoration: none;
-  color: #f3deaa;
+  color: var(--main-light-textColor);
   font-size: 20px;
 }
 .formPhoto {
@@ -68,9 +75,9 @@ header {
     height: 40px;
     width: 100%;
     background-color: #f8f8f8;
-    color: #6e6e54;
-    border-bottom: 1px solid #bebebb;
-    font-family: "Inter", sans-serif;
+    color:var(--main-dark-textColor);
+    border-bottom: 1px solid #e9e9e6;
+    font-family: var(--main-fontFamily);
   }
   input[type=text]:focus{
     outline: none;
@@ -79,40 +86,42 @@ header {
   .textDescription {
     background-color: #f8f8f8;
     border: none;
-    color: #6e6e54;
+    color: var(--main-dark-textColor);
     font-family: "Inter", sans-serif;
+    border-bottom: 1px solid #e9e9e6;
   }
   h2 {
     padding-top: 30px;
     padding-bottom: 0;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    color: var(--main-color);
+    font-family: var(--main-fontFamily);
     font-weight: normal;
   }
-  .textDescription[type=text]:focus{
-    outline: #797a5b;
+  .textDescription:focus{
+    outline:none;
   }
 }
 .addButton {
   width: 115px;
   height: 50px;
   border-radius: 2px;
-  color: #f3deaa;
+  color: var(--main-light-textColor);
   border: none;
   cursor: pointer;
   align-self: flex-end;
-  background-color: #797b48;
+  background-color: var(--buttonColor);
   margin-top: 10px;
 }
 .messageAdd{
-  color: #797b48;
+  color: var(--buttonColor);
   font-size: 20px;
   padding-top: 10px;
   transition: 0.5s;
   padding-bottom: 20px;
 }
 .messageAddError{
-  color: #9e3535;
+  color: var(--main-redColor);
   font-size: 20px;
   padding-top: 10px;
   transition: 0.5s;
@@ -120,20 +129,20 @@ header {
 }
 .photoBox {
   
-  background-color: #c2c3a6;
+  background-color:var(--imageCardColor);
 }
 
 footer {
-  background-color: #797a5b;
+  background-color: var(--main-color);
   width: 100%;
   height: 150px;
   display: flex;
   align-items: center;
-  color: #f3deaa;
+  color: var(--main-light-textColor);
   
  
   h2 {
-    font-family: "inter";
+    font-family: var(--main-fontFamily);
     font-size: 30px;
     font-weight: normal;
   }
@@ -169,7 +178,7 @@ footer {
     
     a{
       text-decoration: none;
-      color: #f3deaa;}
+      color: var(--main-light-textColor)}
   }
 }
 .burgerMenu{
@@ -178,7 +187,7 @@ footer {
  cursor:pointer;
 }
 .burgerMenu:hover svg path,.burgerMenu:hover svg ellipse{
-  fill: #f3deaa;
+  fill: var(--main-light-textColor);
   opacity: 70%;
   stroke: none;
   transition:ease-in-out 1s;
@@ -201,7 +210,7 @@ footer {
    }
    .mobileMenu{
     display: inline-block;
-    background-color: #797a5b;
+    background-color: var(--main-color);
    }
    .box {
     display: flex;

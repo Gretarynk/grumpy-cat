@@ -1,10 +1,18 @@
+:root{--main-color: #797a5b;
+  --main-light-textColor: #f3deaa;
+  --main-dark-textColor:#4b4e27;
+  --main-fontFamily:"Inter", sans-serif;
+  --main-redColor:#9e3535;
+  --buttonColor:#797b48;
+--imageCardColor:#C2C3A6;}
+
 body {
   margin: auto;
   max-width: 1440px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--main-fontFamily);
 }
 header {
-  background-color: #797a5b;
+  background-color:var(--main-color);
   height: 150px;
   display: flex;
   justify-content: space-between;
@@ -21,7 +29,7 @@ header {
   width: 100px;
   height: 100px;
 
-  background-color: #797a5b;
+  background-color: var(--main-color);
 }
 .navigation {
   width: 66%;
@@ -37,7 +45,7 @@ header {
 }
 .navigation ul li a {
   text-decoration: none;
-  color: #f3deaa;
+  color: var(--main-light-textColor);
   font-size: 20px;
 }
 .cardWrapper {
@@ -49,7 +57,7 @@ header {
 }
 .imageCard{
   
-    background-color:#C2C3A6;
+    background-color:var(--imageCardColor);
 }
 
 .imageCard img {
@@ -67,6 +75,7 @@ header {
   .title {
     font-size: 30px;
     padding-bottom: 20px;
+    color: var(--main-color);
   }
   .btnWrapper {
     padding-top: 50px;
@@ -77,7 +86,7 @@ header {
       width: 115px;
       height: 50px;
       border-radius: 2px;
-      color: #f3deaa;
+      color: var(--main-light-textColor);
       border: none;
       cursor: pointer;
     }
@@ -85,27 +94,27 @@ header {
   }
 }
 #btnDelete {
-  background-color: #9e3535;
+  background-color: var(--main-redColor);
 }
 #back {
-  background-color: #797b48;
+  background-color: var(--buttonColor);
   
 }
 .message{
-  color: #797b48;
+  color: var(--buttonColor);
   font-size: 20px;
   padding-top: 10px;
   transition: 0.5s;
   padding-bottom: 20px;
 }
 footer {
-  background-color: #797a5b;
+  background-color:var(--main-color);
   height: 150px;
   display: flex;
   align-items: center;
-  color: #f3deaa;
+  color:var(--main-light-textColor);
   h2 {
-    font-family: 'inter';
+    font-family: var(--main-fontFamily);
     font-size: 30px;
     font-weight: normal;
   }
@@ -142,7 +151,7 @@ footer {
     
     a{
       text-decoration: none;
-      color: #f3deaa;}
+      color:var(--main-light-textColor);}
   }
 }
 .burgerMenu{
@@ -151,7 +160,7 @@ footer {
  cursor:pointer;
 }
 .burgerMenu:hover svg path,.burgerMenu:hover svg ellipse{
-  fill: #f3deaa;
+  fill:var(--main-light-textColor);
   opacity: 70%;
   stroke: none;
   transition:ease-in-out 1s;
@@ -173,7 +182,7 @@ footer {
    }
    .mobileMenu{
     display: inline-block;
-    background-color: #797a5b;
+    background-color: var(--main-color);
    }
    .cardWrapper{
     display: flex;

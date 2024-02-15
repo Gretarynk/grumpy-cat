@@ -1,10 +1,18 @@
+:root{--main-color: #797a5b;
+--main-light-textColor: #f3deaa;
+--main-dark-textColor:#4b4e27;
+--main-fontFamily:"Inter", sans-serif;
+--main-redColor:#9e3535;
+--buttonColor:#797b48;
+--imageCardColor:#C2C3A6;}
+
 body {
   margin: auto;
   max-width: 1440px;
   font-family: "Inter", sans-serif;
 }
 header {
-  background-color: #797a5b;
+  background-color: var(--main-color);
   height: 150px;
   display: flex;
   justify-content: space-between;
@@ -21,7 +29,7 @@ header {
   width: 100px;
   height: 100px;
 
-  background-color: #797a5b;
+  background-color: var(--main-color);
 }
 .navigation {
   width: 66%;
@@ -37,7 +45,7 @@ header {
 }
 .navigation ul li a {
   text-decoration: none;
-  color: #f3deaa;
+  color: var(--main-light-textColor);
   font-size: 20px;
 }
 .photoBox {
@@ -56,8 +64,8 @@ header {
 }
 .textBox {
   h1 {
-    font-family: "inter";
-    color: #757855;
+    font-family: var(--main-fontFamily);
+    color: var(--main-color);
     text-align: center;
     font-weight: normal;
     padding-top: 30px;
@@ -82,17 +90,17 @@ a.card {
 div.card {
   width: 350px;
   height: 470px;
-  background-color: #c2c3a6;
+  background-color: var(--imageCardColor);
   
   /* box-shadow: -1px 6px 15px #bbbbbb; */
   .title {
-    color: #797a5b;
+    color: var(--main-dark-textColor);
     padding: 10px;
     font-size: 20px;
     font-weight:500;
   }
   .price {
-    color: #797a5b;
+    color: var(--main-dark-textColor);
     padding: 10px;
     text-align: right;
   }
@@ -106,13 +114,13 @@ div.card {
   padding-bottom: 10px;
 }
 footer {
-  background-color: #797a5b;
+  background-color: var(--main-color);
   height: 150px;
   display: flex;
   align-items: center;
-  color: #f3deaa;
+  color: var(--main-light-textColor);
   h2 {
-    font-family: "inter";
+    font-family: var(--main-fontFamily);
     font-size: 30px;
     font-weight: normal;
   }
@@ -147,7 +155,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: #f3deaa;
+      color: var(--main-light-textColor);
     }
   }
 }
@@ -158,7 +166,7 @@ footer {
 }
 .burgerMenu:hover svg path,
 .burgerMenu:hover svg ellipse {
-  fill: #f3deaa;
+  fill:var(--main-light-textColor);
   opacity: 70%;
   stroke: none;
   transition: ease-in-out 1s;
@@ -180,7 +188,7 @@ footer {
   }
   .mobileMenu {
     display: inline-block;
-    background-color: #797a5b;
+    background-color:var(--main-color);
   }
   .photoBox {
     display: grid;
