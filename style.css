@@ -51,6 +51,7 @@ header {
 
 .photoBox img {
   width: 100%;
+ 
   object-fit: cover;
 }
 .textBox {
@@ -81,14 +82,14 @@ a.card {
 div.card {
   width: 350px;
   height: 470px;
-  border-radius: 5px;
   background-color: #c2c3a6;
   
   /* box-shadow: -1px 6px 15px #bbbbbb; */
   .title {
     color: #797a5b;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight:500;
   }
   .price {
     color: #797a5b;
@@ -100,6 +101,7 @@ div.card {
 }
 .photo {
   width: 100%;
+  max-height: 360px;
   object-fit: cover;
   padding-bottom: 10px;
 }

@@ -9,8 +9,14 @@ const mobileMenu=document.getElementById('mobileMenu');
 const burgerMenu=document.getElementById('burgerMenu');
 
 buttonAdd.addEventListener('click', async()=>{
-    if(!title.value || !description.value || !price.value || !imgUrl.value || !serviceLocation.value ){
-        return;
+    if(!title.value || !description.value || !price.value || !imgUrl.value || !serviceLocation.value || description.value.length<25 )
+    {messageAdd.innerText = 'Please provide all required information.';
+    messageAdd.classList.add('messageAddError');
+    setTimeout(()=>{
+        messageAdd.innerText='';
+    }, 3000);
+    return;
+       
     }
     const serviceData={
         Title:title.value,
@@ -31,8 +37,10 @@ buttonAdd.addEventListener('click', async()=>{
     console.log(addedServices);
 
     messageAdd.innerText= 'Your service was added successfully.';
+    messageAdd.classList.add('messageAdd');
     setTimeout(()=>{
         messageAdd.innerText='';
+        window.location.assign("../index.html");
     },3000);
 
 });

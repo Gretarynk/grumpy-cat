@@ -1,6 +1,9 @@
 const cardBox = document.getElementById("cardBox");
 const mobileMenu = document.getElementById("mobileMenu");
 const burgerMenu = document.getElementById("burgerMenu");
+const sortByPrice=(services)=>{
+  return services.sort((a,b)=>(a.price>b.price ? 1:-1));
+}
 
 const fetchServices = async () => {
   const response = await fetch(
@@ -8,6 +11,8 @@ const fetchServices = async () => {
   );
   const services = await response.json();
   console.log(services);
+  const sortedServicesByPrice = sortByPrice(services);
+  console.log(sortedServicesByPrice);
 
   services.forEach((service) => {
     const card = document.createElement("div");
