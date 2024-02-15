@@ -196,5 +196,14 @@ footer {
       max-width: 100%;
     }
    }
+   .footerText{
+    width: 50%;
+    h2{
+      font-size: 18px;
+    }
+    .love{
+      font-size: xx-small;
+    }
+  }
   
 }
